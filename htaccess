@@ -1,0 +1,5 @@
+ErrorDocument 400 https://apeman.us/404.html
+ErrorDocument 401 https://apeman.us/404.html
+ErrorDocument 403 https://apeman.us/404.html
+ErrorDocument 404 https://apeman.us/403.html
+ErrorDocument 503 https://apeman.us/404.html

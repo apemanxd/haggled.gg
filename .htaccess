@@ -1,0 +1,2 @@
+ErrorDocument 403 http://apeman.us/403.html
+ErrorDocument 404 http://apeman.us/404.html

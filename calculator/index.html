@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="js">
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+	<script src="https://kit.fontawesome.com/6d9f462883.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="cdn/style.css" rel="stylesheet">
+	<title>Apeman | Steam Points Calculator</title>
+	<meta name="title" content="Apeman | Steam Points Calculator">
+	<meta property="og:title" content="Apeman | Steam Points Calculator">
+
+	<!-- Tittel av embed -->
+	<meta property="og:site_name" content="Sometimes we need help for what 2+2 is xD">
+
+	<!-- Midten highlight blue med link embed -->
+	<meta property="twitter:title" content="Apeman's Calculator | Trusted by all">
+
+	<!-- Description bottom of embed -->
+	<meta name="description" content="Steam Points Calculator">
+	<meta property="og:description" content="Steam Points Calculator">
+
+	<meta property="og:image" content="https://apeman.us/favicon.png">
+	<meta content="#F7C099" name="theme-color">
+	<link rel="icon" type="image/x-icon" href="https://apeman.us/favicon.ico">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="index.html">
+
+	<meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"
+		name="viewport">
+</head>
+
+<body>
+
+	<center>
+		<a href="http://store.apeman.us"><img height="" src="cdn/logo.png" width="400"></a>
+		<h3>Only selling points with the increments of 10,000 points.
+			<br>Eg.<i> 10k, 20k, 30k, 40k, 50k...</i>
+		</h3>
+
+		<div class="webflow-style-input">
+
+			<input id="input" placeholder="Enter steam points" type="number" min="10000" step="10000" max="1010000"
+				onkeyup="if(value<0) value=10000;" oninput="calculate(this.value)">
+		</div>
+
+		<br>
+		<p id="price" style="font-size: 20px;"></p>
+		<p id="crypto"></p>
+		<hr class="hide">
+		<p id="TF2"></p>
+		<hr class="hide">
+		<p id="paypal"></p>
+		<hr class="hide">
+		<p>Only need steam profile and privacy settings on public</p>
+		<!--<p id="ss"></p>-->
+		<hr class="hide">
+
+
+	</center>
+
+	<footer>
+		<center>
+			<a href="faq.html" class="nav-link"><i class="fa fa-question-circle"></i></a>
+			
+			<a href="faq.html" class="nav-link">
+				<span>FAQ</span>
+				</a>
+			<p onclick="help()">Feel free to ask questions. Happy to help😊</p>
+			<p>Discord: <a href="http://apeman.us/discord">apeman#0001</a>
+				<br>Telegram: <a href="https://t.me/TGapeman/">t.me/TGapeman</a>
+				<br>OGU: <a href="https://ogu.gg/apeman">/apeman</a>
+			</p>
+		</center>
+	</footer>
+
+	<script src="cdn/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+
+</html>
