@@ -19,12 +19,12 @@ $(document).ready(() => {
       link: "https://www.apeman.us",
     },
     {
-      name: "ogu",
-      link: "http://ogu.gg/apeman",
+      name: "flipd",
+      link: "http://flipd.gg/apeman",
     },
     {
-      name: "steam",
-      link: "https://www.apeman.us/steam",
+      name: "kingz",
+      link: "https://www.kingz.net/apeman",
     },
   ];
 

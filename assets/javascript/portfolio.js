@@ -20,12 +20,12 @@ $(document).ready(() => {
       link: "https://www.apeman.us",
     },
     {
-      name: "ogu",
-      link: "http://ogu.gg/apeman",
+      name: "flipd",
+      link: "http://flipd.gg/apeman",
     },
     {
-      name: "steam",
-      link: "http://www.apeman.us/steam",
+      name: "kingz",
+      link: "https://www.kingz.net/apeman",
     },
   ];
 
@@ -155,7 +155,7 @@ const writeLine = (text, speed, timeout, callback) => {
 /*    "> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[apeman.us/edgy]</span>....",
     `> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://apeman.us' target="_blank"><b style='color: #5865f2'>apeman.us</b></a>`, */
 writeLine(["> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[apeman.us]</span>....",
-`> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://store.apeman.us' target="_blank"><b style='color: #5865f2'><u>store.apeman.us</u></b></a>`,], 45, () => {
+`> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://sell.apeman.us' target="_blank"><b style='color: #5865f2'><u>sell.apeman.us</u></b></a>`,], 45, () => {
   if (app.skippedIntro) return;
 
   clearCursor();
