@@ -16,7 +16,7 @@ $(document).ready(() => {
     },
     {
       name: "apeman",
-      link: "https://www.apeman.us",
+      link: "https://apeman.us",
     },
     {
       name: "flipd",
@@ -24,7 +24,7 @@ $(document).ready(() => {
     },
     {
       name: "kingz",
-      link: "https://www.kingz.net/apeman",
+      link: "https://kingz.net/apeman",
     },
   ];
 

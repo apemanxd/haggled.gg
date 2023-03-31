@@ -26,7 +26,7 @@ class _app {
     "( ͡~ ͜ʖ ͡°)",
     "I'm just better",
     "𝕡𝕣𝕚𝕟𝕔𝕚𝕡𝕖♔",
-    "<a href='http://www.apeman.gg'>apeman.gg</a>",
+    "<a href='http://apeman.gg'>apeman.gg</a>",
   ];
 
   titleChanger = (text, delay) => {
