@@ -19,7 +19,7 @@ var PaypalConstFees = 3;
 var TF2ConstFees = 2;
 
 
-var TF2Value = 1.5;
+var TF2Value = 1.6;
 var Discount = 0;
 var ConversionEuro = 1;
 var ss = 5000;
@@ -99,7 +99,7 @@ function calculate(input) {
 
 		var TotalPriceString = "To purchase " + "<strong>" + FinalLetter + "</strong>" + " points will cost " + "<s style='text-decoration-thickness: 3px;'>$" + ((points10k * (input / 10000)) + CryptoConstFees) + "</s> " + "<strong>$" + TotalCrypto + "</strong>" + " <br>You got automatically <strong> " + Discount + "% discount!</strong>";
 		var cryptoString = "Payment as Crypto: <strong>$" + TotalCrypto + "</strong> ~ " + "<strong>€" + (TotalCrypto * ConversionEuro) + "</strong>"
-		var paypalString = "Payment as Revolut/Wise: <strong>$" + TotalPaypal + "</strong> ~ " + "<strong>€" + Math.ceil((TotalPaypal * ConversionEuro)) + "</strong>"
+		var paypalString = "Payment as PayPal/Wise: <strong>$" + TotalPaypal + "</strong> ~ " + "<strong>€" + Math.ceil((TotalPaypal * ConversionEuro)) + "</strong>"
 		var tf2String = "Payment as TF2 Keys <strong>$" + TotalTF2 + "</strong> ~ " + "<strong>€" + Math.ceil((TotalTF2 * ConversionEuro)) + "</strong>" + "<br>Amount of TF2 keys: <strong>" + Math.ceil(TotalTF2 / TF2Value) + "</strong><br>TF2 Key rate: $" + TF2Value;
 		var ssString = "You need to upload a total amount of <strong>" + Math.ceil((input / ss)) + "</strong> Screenshots"
 
@@ -108,7 +108,7 @@ function calculate(input) {
 	else {
 		var TotalPriceString = "To purchase " + "<strong>" + FinalLetter + "</strong>" + " points will cost <strong> $"+ TotalCrypto  + "</strong>"
 		var cryptoString = "Payment as Crypto: <strong>$" + TotalCrypto + "</strong> ~ " + "<strong>€" + (TotalCrypto * ConversionEuro) + "</strong>"
-		var paypalString = "Payment as Revolut/Wise: <strong>$" + TotalPaypal + "</strong> ~ " + "<strong>€" + Math.ceil((TotalPaypal * ConversionEuro)) + "</strong>"
+		var paypalString = "Payment as PayPal/Wise: <strong>$" + TotalPaypal + "</strong> ~ " + "<strong>€" + Math.ceil((TotalPaypal * ConversionEuro)) + "</strong>"
 		var tf2String = "Payment as TF2 Keys <strong>$" + TotalTF2 + "</strong> ~ " + "<strong>€" + Math.ceil((TotalTF2 * ConversionEuro)) + "</strong>" + "<br>Amount of TF2 keys: <strong>" + Math.ceil(TotalTF2 / TF2Value) + "</strong><br>TF2 Key rate: $" + TF2Value;
 		var ssString = "You need to upload a total amount of <strong>" + Math.ceil((input / ss)) + "</strong>"
 	}

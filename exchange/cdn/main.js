@@ -28,7 +28,6 @@ function calculate(input) {
 
 	var finalFee = ((percentage)*(Price+constFee))+constFee;
 	var finalPrice = Price-finalFee;
-
 	finalFee = finalFee.toFixed(2);
 	finalPrice = finalPrice.toFixed(2);
 	TotalCrypto = finalPrice;
