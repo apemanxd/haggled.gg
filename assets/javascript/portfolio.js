@@ -72,8 +72,8 @@ $(document).ready(() => {
     "a",
   ]);
   app.iconChanger([
-    "https://apeman.us/favicon.png",
-    "https://apeman.us/favicon.png",
+    "https://i.imgur.com/0QVLFk6.png",
+    "https://i.imgur.com/0QVLFk6.png",
   ]);
 });
 
