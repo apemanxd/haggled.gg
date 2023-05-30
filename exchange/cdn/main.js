@@ -47,7 +47,7 @@ function calculate(input) {
 	else {
 		var TotalPriceString = "Exchange amount: " + "<strong>$" + FinalLetter + "</strong>" + "<br><span id='small'>The Fee: <strong> $" + finalFee + "</strong></span>";
 		var cryptoString = "<strong>Crypto ⇄ Crypto:</strong> You will receive ~ $" + TotalCrypto;
-		var paypalString = "<strong>CRYPTO → PAYPAL/REVOLUT/E-TRANSFER/WISE:</strong> You will receive ~ $" + TotalCrypto;
+		var paypalString = "<strong>CRYPTO → PAYPAL/E-TRANSFER/WISE:</strong> You will receive ~ $" + TotalCrypto;
 	
 	}
 
