@@ -19,7 +19,7 @@ class _app {
     "jello",
   ];
   brandDescription = [
-    "apeman#0001",
+    "apeman",
     "u mad!",
     "♿YOU",
     "apes together strong",

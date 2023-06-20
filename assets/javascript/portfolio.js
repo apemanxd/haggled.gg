@@ -12,8 +12,8 @@ console.log("🍌");
 $(document).ready(() => {
   const links = [
     {
-      name: "discord",
-      link: "https://apeman.us/discord",
+      name: "Telegram",
+      link: "https://t.me/TGapeman",
     },
     {
       name: "apeman",
