@@ -1,25 +1,27 @@
+/*
 var points10k = 8;
 var points50k = 38;
 var points100k = 72;
 var points200k = 136;
 var points500k = 320;
 var points1mil = 560;
+*/
 
-/*
+
 var points10k = 4;
 var points50k = 19
 var points100k = 34;
 var points200k = 64;
 var points500k = 140;
 var points1mil = 240;
-*/
+
 
 var CryptoConstFees = 0;
 var PaypalConstFees = 3;
 var TF2ConstFees = 2;
 
 
-var TF2Value = 1.6;
+var TF2Value = 1.55;
 var Discount = 0;
 var ConversionEuro = 1;
 var ss = 5000;
