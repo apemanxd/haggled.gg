@@ -19,7 +19,7 @@ function calculate(input) {
 	functionOnce();
 	Price = Math.ceil(input);
 	percentage = (document.getElementById("percentageInput").value) / 100;
-	constFee = parseInt(document.getElementById("constInput").value);
+	constFee = parseFloat(document.getElementById("constInput").value);
 
 	finalFee = ((percentage) * (Price + constFee)) + constFee;
 	finalFee = finalFee.toFixed(2);
@@ -29,7 +29,7 @@ function calculate(input) {
 
 	TotalCrypto = finalPrice;
 
-	finalWithFees = Price + (parseInt(finalFee));
+	finalWithFees = Price + (parseFloat(finalFee));
 	finalWithFees = Math.ceil(finalWithFees);
 
 	var FinalLetter = input;
