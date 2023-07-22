@@ -30,6 +30,7 @@ function calculate(input) {
 	TotalCrypto = finalPrice;
 
 	finalWithFees = Price + (parseInt(finalFee));
+	finalWithFees = Math.ceil(finalWithFees);
 
 	var FinalLetter = input;
 	FinalLetter = Number(FinalLetter).toLocaleString("en-EN").split(/\s/).join(',');
@@ -37,7 +38,7 @@ function calculate(input) {
 
 	if (input >= 10000) {
 		var TotalPriceString = "YOU CRAZYYY";
-		var cryptoString = "PM me on https://t.me/TGapeman for special pricing and instructions";
+		var cryptoString = "PM me on https://t.me/TGapeman for special pricing and instructions 💛";
 	}
 
 
