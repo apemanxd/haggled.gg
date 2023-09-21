@@ -1,0 +1,57 @@
+.hide {
+	display: none;
+}
+
+p {
+	color: #FFF;
+	text-decoration: none;
+}
+
+span {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	color: #FFF;
+}
+
+h3 {
+	color: #FFF;
+}
+
+a:hover {
+	color: #57e6e6;
+}
+
+body {
+	background: linear-gradient(to right, #202028, #3b3837) fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Roboto, sans-serif;
+}
+
+
+label{
+	color: #FFF;
+}
+
+div {
+    display: inline-block;
+}
+
+div label {
+    display: block;
+}
+input{
+	width: 100px;
+}
