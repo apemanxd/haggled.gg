@@ -35,9 +35,9 @@ function calculate(input) {
 	withoutFeesCredit = (input-(finalFee-input));
 
 
-	if (input >= 1000000) {
-		var TotalPriceString = "YOU CRAZYYY";
-		var cryptoString = "PM me on https://t.me/TGapeman for special pricing and instructions 💛";
+	if (input >= 2000000) {
+		var TotalPriceString = "YOU CRAZY";
+		var cryptoString = "PM me on <a href='https://t.me/TGapeman/'>t.me/TGapeman</a> for special pricing and instructions 💛";
 	}
 
 
