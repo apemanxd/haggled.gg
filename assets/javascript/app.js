@@ -19,14 +19,14 @@ class _app {
     "jello",
   ];
   brandDescription = [
-    "apeman",
+    "haggled",
     "u mad!",
     "♿YOU",
-    "apes together strong",
+    "haggled together strong",
     "( ͡~ ͜ʖ ͡°)",
     "I'm just better",
     "𝕡𝕣𝕚𝕟𝕔𝕚𝕡𝕖♔",
-    "<a href='http://apeman.gg'>apeman.gg</a>",
+    "<a href='http://haggled.gg'>haggled.gg</a>",
   ];
 
   titleChanger = (text, delay) => {

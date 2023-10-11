@@ -13,19 +13,19 @@ $(document).ready(() => {
   const links = [
     {
       name: "Telegram",
-      link: "https://t.me/TGapeman",
+      link: "https://t.me/Haggled",
     },
     {
-      name: "apeman",
-      link: "https://apeman.us",
+      name: "Haggled",
+      link: "https://haggled.gg",
     },
     {
       name: "flipd",
-      link: "http://flipd.gg/apeman",
+      link: "http://flipd.gg/Haggled",
     },
     {
       name: "kingz",
-      link: "https://kingz.net/apeman",
+      link: "https://kingz.net/Haggled",
     },
   ];
 
@@ -58,18 +58,19 @@ $(document).ready(() => {
 
   app.titleChanger([
     " ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌",
-    "a",
-    "ap",
-    "ape",
-    "apem",
-    "apema",
-    "apeman",
-    "apeman",
-    "apema",
-    "apem",
-    "ape",
-    "ap",
-    "a",
+    "h",
+    "ha",
+    "hag",
+    "hagg",
+    "haggl",
+    "haggle",
+    "haggled",
+    "haggle",
+    "haggl",
+    "hagg",
+    "hag",
+    "ha",
+    "h",
   ]);
   app.iconChanger([
     "https://i.imgur.com/0QVLFk6.png",
@@ -105,10 +106,10 @@ $("html").on("contextmenu", (event) => {
 
   const trollfaceLight = app.skippedIntro ? "" : "trollface-light";
 
-  img.src = "https://apeman.us/favicon.png";
+  img.src = "https://Haggled.gg/favicon.png";
   img.width = 28;
   img.height = 28;
-  img.alt = "apeman.us";
+  img.alt = "Haggled.gg";
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
@@ -152,10 +153,10 @@ const writeLine = (text, speed, timeout, callback) => {
     });
   }, timeout);
 };
-/*    "> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[apeman.us/edgy]</span>....",
-    `> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://apeman.us' target="_blank"><b style='color: #5865f2'>apeman.us</b></a>`, */
-writeLine(["> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[apeman.us]</span>....",
-`> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://sell.apeman.us' target="_blank"><b style='color: #5865f2'><u>sell.apeman.us</u></b></a>`,], 45, () => {
+/*    "> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[Haggled.gg/edgy]</span>....",
+    `> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://Haggled.gg' target="_blank"><b style='color: #5865f2'>Haggled.gg</b></a>`, */
+writeLine(["> Apes together strong<br>> Granting access to <span style='font-size: 14px; color: #2bff00;'>[Haggled.gg]</span>....",
+`> <span style='font-size: 14px; color: #2bff00;'>Access granted</span><br>> Do you want steam points? hehehe: <a href='http://sell.Haggled.gg' target="_blank"><b style='color: #5865f2'><u>sell.Haggled.gg</u></b></a>`,], 45, () => {
   if (app.skippedIntro) return;
 
   clearCursor();
@@ -167,7 +168,7 @@ writeLine(["> Apes together strong<br>> Granting access to <span style='font-siz
   clearCursor();
 
   writeLine(
-    [`> <b><i style='color: pink'>.gg/apeman</i></b>`],
+    [`> <b><i style='color: pink'>.gg/Haggled</i></b>`],
     120,
     500,
     () => {
