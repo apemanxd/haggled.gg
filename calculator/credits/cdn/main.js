@@ -31,8 +31,9 @@ function calculate(input) {
 	totalPrice = finalPrice;
 
 	//Price without credit fees covered
-	withoutFees = ((input/1000)*constFee).toFixed(2);
+	withoutFees = ((input*constFee)/1000).toFixed(2);
 	withoutFeesCredit = (input-(finalFee-input));
+
 
 
 	if (input >= 2000000) {
@@ -43,7 +44,8 @@ function calculate(input) {
 
 	else {
 		var TotalPriceString = "Credit amount: " + "<strong>©" + input + "</strong>" + " | <span id='small'>With sending fees: <strong> ©" + finalFee + "</strong></span>";
-		var cryptoString = "<strong>Fees Covered:</strong> Pay $" + totalPrice + " to send ©" + finalFee + " and receive ©"+ input + "<br><strong>Without Fees:</strong> Pay $" + withoutFees + " to send ©" + input +" and receive ©" + withoutFeesCredit;
+		var cryptoString = "<strong>Fees Covered:</strong> Pay $" + totalPrice + " to send ©" + finalFee + " and receive ©"+ input + 
+		"<br><strong>Without Fees:</strong> Pay $" + withoutFees + " to send ©" + input +" and receive ©" + withoutFeesCredit;
 	}
 
 	document.getElementById("price").innerHTML = TotalPriceString;
