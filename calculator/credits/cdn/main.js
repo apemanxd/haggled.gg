@@ -32,7 +32,7 @@ function calculate(input) {
 
 	//Price without credit fees covered
 	withoutFees = ((input*constFee)/1000).toFixed(2);
-	withoutFeesCredit = (input-(finalFee-input));
+	withoutFeesCredit = (input*((100-percentage)/100));
 
 
 
