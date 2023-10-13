@@ -44,8 +44,9 @@ function calculate(input) {
 
 	else {
 		var TotalPriceString = "Credit amount: " + "<strong>©" + input + "</strong>" + " | <span id='small'>With sending fees: <strong> ©" + finalFee + "</strong></span>";
-		var cryptoString = "<strong>Fees Covered:</strong> Pay $" + totalPrice + " to send ©" + finalFee + " and receive ©"+ input + 
-		"<br><strong>Without Fees:</strong> Pay $" + withoutFees + " to send ©" + input +" and receive ©" + withoutFeesCredit;
+		var cryptoString = "<strong>Option 1:</strong> Pay $" + totalPrice + " to send ©" + finalFee + " and receive ©"+ input + 
+		"<br><strong>Option 2:</strong> Pay $" + withoutFees + " to send ©" + input +" and receive ©" + withoutFeesCredit +
+		"<br><strong>Option 3:</strong> Pay $" ;
 	}
 
 	document.getElementById("price").innerHTML = TotalPriceString;
