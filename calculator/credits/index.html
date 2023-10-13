@@ -40,16 +40,16 @@
 		<div>
 			<label>Credit amount</label>
 			<input id="input" placeholder="Enter amount" type="number" min="1000" step="1000"
-				oninput="calculate(this.value)">
+				oninput="calculate()">
 		</div>
 		<div>
 			<label>$/k rate</label>
-			<input id="constInput" placeholder="Enter amount" type="number" min="0" value="1" step="0.1">
+			<input id="constInput" placeholder="Enter amount" type="number" min="0" value="1" step="0.1" onchange="calculate()">
 		</div>
 
 		<div>
 			<label>Sending fee (%)</label>
-			<input id="percentageInput" placeholder="Enter amount" type="number" min="0" max="100" value="7" step="1">
+			<input id="percentageInput" placeholder="Enter amount" type="number" min="0" max="100" value="7" step="1" onchange="calculate()">
 		</div>
 
 		<p id="price" style="font-size: 20px;"></p>
