@@ -34,6 +34,10 @@ function calculate(input) {
 	withoutFees = ((input*constFee)/1000).toFixed(2);
 	withoutFeesCredit = (input*((100-percentage)/100));
 
+	//Price for withoutcredit fees
+	withcreditfeeMoney= (withoutFeesCredit*constFee)/1000;
+	withcreditfeeCredit= (withoutFeesCredit*((100-percentage)/100)).toFixed(2);
+
 
 
 	if (input >= 2000000) {
@@ -46,7 +50,7 @@ function calculate(input) {
 		var TotalPriceString = "Credit amount: " + "<strong>©" + input + "</strong>" + " | <span id='small'>With sending fees: <strong> ©" + finalFee + "</strong></span>";
 		var cryptoString = "<strong>Option 1:</strong> Pay $" + totalPrice + " to send ©" + finalFee + " and receive ©"+ input + 
 		"<br><strong>Option 2:</strong> Pay $" + withoutFees + " to send ©" + input +" and receive ©" + withoutFeesCredit +
-		"<br><strong>Option 3:</strong> Pay $" ;
+		"<br><strong>Option 3:</strong> Pay $ " + withcreditfeeMoney + " to send ©" + withoutFeesCredit +" and receive ©" + withcreditfeeCredit;
 	}
 
 	document.getElementById("price").innerHTML = TotalPriceString;
