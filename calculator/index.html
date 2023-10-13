@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Contents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Directory Contents</h1>
+        <table id="directoryTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table content will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Example data, replace this with your directory contents
+        var directoryContents = [
+            { name: 'steampoints', type: 'Directory' },
+            { name: 'fees', type: 'Directory' },
+            { name: 'exchanges', type: 'Directory' },
+            { name: 'credits', type: 'Directory' },
+            // Add more items as needed
+        ];
+
+        // Function to create table rows
+        function createTableRow(item) {
+            var row = document.createElement('tr');
+            var nameCell = document.createElement('td');
+            var typeCell = document.createElement('td');
+            var link = document.createElement('a');
+            link.href = 'calculator/' + item.name; // Adjust the path based on your folder structure
+
+            // Add the icon based on the file type
+            link.appendChild(document.createTextNode(item.name));
+            nameCell.appendChild(link);
+            typeCell.appendChild(document.createTextNode(item.type));
+
+            row.appendChild(nameCell);
+            row.appendChild(typeCell);
+            return row;
+        }
+
+        // Populate the table
+        var tableBody = document.getElementById('tableBody');
+        directoryContents.forEach(function (item) {
+            var row = createTableRow(item);
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>
