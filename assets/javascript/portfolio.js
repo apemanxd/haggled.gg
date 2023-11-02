@@ -73,8 +73,6 @@ $(document).ready(() => {
     "h",
   ]);
   app.iconChanger([
-    "https://i.imgur.com/0QVLFk6.png",
-    "https://i.imgur.com/0QVLFk6.png",
   ]);
 });
 
