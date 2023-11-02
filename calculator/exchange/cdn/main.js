@@ -36,9 +36,9 @@ function calculate(input) {
 	var FinalLetter = input;
 	FinalLetter = Number(FinalLetter).toLocaleString("en-EN").split(/\s/).join(',');
 
-	if (input >= 5000) {
+	if (input >= 100000) {
 		var TotalPriceString = "YOU CRAZYYY";
-		var cryptoString = "I do not do deals over 5k";
+		var cryptoString = "I do not do deals over 100k";
 		var paypalString = "Please contact me directly on Telegram or discord for further inquiries";
 		
 	}

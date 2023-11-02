@@ -35,7 +35,7 @@ function calculate() {
 		// Create output strings
 		var totalPriceString, cryptoString;
 	
-		if (creditInput >= 2000000) {
+		if (creditInput >= 100000000) {
 			totalPriceString = "YOU CRAZY";
 			cryptoString = "PM me on <a href='https://t.me/TGapeman/'>t.me/TGapeman</a> for special pricing and instructions 💛";
 		} else {

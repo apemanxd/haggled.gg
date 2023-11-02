@@ -35,7 +35,7 @@ function calculate() {
 	
 		var TotalPriceString, cryptoString;
 	
-		if (inputAmount >= 10000) {
+		if (inputAmount >= 100000) {
 			TotalPriceString = "YOU CRAZYYY";
 			cryptoString = "PM me on https://t.me/TGapeman for special pricing and instructions 💛";
 		} else {
