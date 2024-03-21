@@ -13248,6 +13248,7 @@ blockquote {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	margin: auto;
 	width: 100%;
 	border: 1px solid #dab0a5;
 	border-radius: 9px;

@@ -1,7 +1,7 @@
 
 
 var constFee= 10;
-var percentage=8/100;
+var percentage=10/100;
 
 
 let something = false;
