@@ -27,26 +27,21 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="index.html">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+	<meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"
+		name="viewport">
 </head>
 
 <body>
 	<div class="footer-v2 wf-section">
 		<div class="c-footer__wrapper">
 			<div class="c-footer__signup-wrapper">
-				<h2 class="heading-10 footer"><strong class="bold-text-5">Haggled Coin and Exchange</strong></h2><a
-					href="https://haggled.gg/calculator/exchange" data-gatrack="hero_link_clicked,app_button"
-					class="c-footer__button w-button">Get started<br></a>
+				<h2 class="heading-10 footer"><strong class="bold-text-5">Haggled Coin and Exchange</strong></h2><a href="https://haggled.gg/calculator/exchange"
+					data-gatrack="hero_link_clicked,app_button" class="c-footer__button w-button">Get started<br></a>
 			</div>
 			<div class="">
 				<h3 class="heading-11">Buy, sell and trade one widest selection of coins:</h3>
-				<input class="c-footer__button w-button" type="text" id="searchInput" onkeyup="searchFunction()"
-					placeholder="Search cryptocurrencies.." title="Type in a cryptocurrency name">
 			</div>
 			<div class=" grid-13">
-
 				<div id="w-node-_30b9f0ae-dc5d-d380-2ed3-b9a87c719319-7c71930c" class="c-coins__grid-item"><a
 						href="https://www.haggled.gg/coin/buy-bitcoin"
 						class="c-coins__grid-item-linkblock w-inline-block">
@@ -253,8 +248,7 @@
 						</div>
 					</a></div>
 				<div id="w-node-_8ac77af1-4f5b-2de7-36a4-fd1d8cc67098-7c71930c" class="c-coins__grid-item"><a
-						href="https://www.haggled.gg/coin/buy-curve"
-						class="c-coins__grid-item-linkblock w-inline-block">
+						href="https://www.haggled.gg/coin/buy-curve" class="c-coins__grid-item-linkblock w-inline-block">
 						<div class="c-coins__grid-item-content">
 							<div class="c-coins__grid-item-imagewrapper"><img
 									src="https://assets-global.website-files.com/5a7df80a1735290001389a96/60d34320df6ea53f8ef26259_NEW_White_Curve_CRV-.svg"
@@ -291,8 +285,7 @@
 						</div>
 					</a></div>
 				<div id="w-node-_4efbeb35-1e84-746a-87c7-83f4bcef42d4-7c71930c" class="c-coins__grid-item"><a
-						href="https://www.haggled.gg/coin/buy-yearn"
-						class="c-coins__grid-item-linkblock w-inline-block">
+						href="https://www.haggled.gg/coin/buy-yearn" class="c-coins__grid-item-linkblock w-inline-block">
 						<div class="c-coins__grid-item-content">
 							<div class="c-coins__grid-item-imagewrapper"><img
 									src="https://assets-global.website-files.com/5a7df80a1735290001389a96/60dc9aa10c737cb5571957c4_NEW_White_YearnFinance_YFI_NEW_White_YearnFinance_YFI.svg"
@@ -317,8 +310,7 @@
 						</div>
 					</a></div>
 				<div id="w-node-d13fa91d-3f5b-42b1-6388-2a64f8bc23f2-7c71930c" class="c-coins__grid-item"><a
-						href="https://www.haggled.gg/coin/buy-maker"
-						class="c-coins__grid-item-linkblock w-inline-block">
+						href="https://www.haggled.gg/coin/buy-maker" class="c-coins__grid-item-linkblock w-inline-block">
 						<div class="c-coins__grid-item-content">
 							<div class="c-coins__grid-item-imagewrapper"><img
 									src="https://assets-global.website-files.com/5a7df80a1735290001389a96/60dc995e684284c54442b5e9_NEW_White_Maker_MKR-.svg"
@@ -393,8 +385,7 @@
 						</div>
 					</a></div>
 				<div id="w-node-_5a07b8a6-2414-5ed9-1951-aa32f1e8d891-7c71930c" class="c-coins__grid-item"><a
-						href="https://www.haggled.gg/coin/buy-enjin"
-						class="c-coins__grid-item-linkblock w-inline-block">
+						href="https://www.haggled.gg/coin/buy-enjin" class="c-coins__grid-item-linkblock w-inline-block">
 						<div class="c-coins__grid-item-content">
 							<div class="c-coins__grid-item-imagewrapper"><img
 									src="https://assets-global.website-files.com/5a7df80a1735290001389a96/61033b3bd7a195429750e9a2_Coin%3DENJ.svg"
@@ -768,11 +759,12 @@
 						</div>
 					</a></div>
 			</div>
-
+			
 			<div class="lp-footer-contents">
 				<div class="rule footerrule low"></div>
-				<div class="div-block-218"><img src="https://haggled.gg/assets/others/logo2.gif" loading="lazy"
-						alt="Haggled logo" class="image-52" width="200"></div>
+				<div class="div-block-218"><img
+						src="https://haggled.gg/assets/others/logo2.gif"
+						loading="lazy" alt="Haggled logo" class="image-52" width="200"></div>
 				<div>
 					<p class="new-footer-paragraph">©2023 <span class="text-span">Haggled.gg</span> <span
 							class="text-span-2">All rights reserved.</span></p>
@@ -782,62 +774,6 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script>
-		function searchFunction() {
-			// Declare variables
-			var input, filter, gridItems, gridItemName, gridItemTicker, i, txtValue;
-			input = document.getElementById('searchInput');
-			filter = input.value.toUpperCase();
-			gridItems = document.getElementsByClassName('c-coins__grid-item');
-
-			// Loop through all grid items
-			for (i = 0; i < gridItems.length; i++) {
-				gridItemName = gridItems[i].getElementsByClassName('c-coins__grid-item-coinname')[0];
-				gridItemTicker = gridItems[i].getElementsByClassName('c-coins__grid-item-tickername')[0];
-				name = gridItemName.textContent || gridItemName.innerText;
-				ticker = gridItemTicker.textContent || gridItemTicker.innerText;
-
-				// Combine name and ticker for search functionality
-				title = name + ' ' + ticker;
-				// Check if the text inside the cryptocurrency name or ticker container matches the search value
-				if (title.toUpperCase().indexOf(filter) > -1) {
-					gridItems[i].style.display = "";
-				} else {
-					gridItems[i].style.display = "none";
-				}
-			}
-		}
-	</script>
-
-	<script>
-		//removes arrow in search function
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get the search input element
-			var searchInput = document.getElementById("searchInput");
-
-			// Check if the search input exists
-			if (searchInput) {
-				// Change the color of the input with !important
-				searchInput.style.setProperty("background-image", "url()",
-				"important"); // Change to your desired color
-			}
-		});
-	</script>
-
-	<script>
-		//removes all href from bitcoin and similar
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get all elements with the class "c-coins__grid-item-linkblock"
-			var linkBlocks = document.querySelectorAll(".c-coins__grid-item-linkblock");
-
-			// Loop through each link block
-			linkBlocks.forEach(function (linkBlock) {
-				// Remove the href attribute
-				linkBlock.removeAttribute("href");
-			});
-		});
-	</script>
-
 
 
 </body>

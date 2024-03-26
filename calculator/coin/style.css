@@ -13410,8 +13410,8 @@ blockquote {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	padding-top: 50px;
-	padding-bottom: 51px;
+	padding-top: 0px;
+	padding-bottom: 10px;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
@@ -24854,6 +24854,7 @@ blockquote {
 }
 
 .grid-13 {
+	padding-top: 25px;
 	padding-right: 100px;
 	padding-left: 100px
 }
