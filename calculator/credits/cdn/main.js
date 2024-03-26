@@ -41,8 +41,8 @@ function calculate() {
 		} else {
 			totalPriceString = "Credit amount: <strong>©" + creditInput + "</strong> | <span id='small'>With sending fees: <strong>©" + finalFee + "</strong></span>";
 			cryptoString = "<strong>Option 1:</strong> Pay $" + finalPrice + " to send ©" + finalFee + " and receive ©" + creditInput +
-				"<br><strong>Option 2:</strong> Pay $" + withoutFees + " to send ©" + creditInput + " and receive ©" + withoutFeesCredit +
-				"<br><strong>Option 3:</strong> Pay $ " + withCreditFeeMoney + " to send ©" + withoutFeesCredit + " and receive ©" + withCreditFeeCredit;
+				"<br><strong>Option 2:</strong> Pay $" + withoutFees + " to send ©" + creditInput + " and receive ©" + withoutFeesCredit;
+				/*"<br><strong>Option 3:</strong> Pay $ " + withCreditFeeMoney + " to send ©" + withoutFeesCredit + " and receive ©" + withCreditFeeCredit;*/
 		}
 	
 		// Update HTML
