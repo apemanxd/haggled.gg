@@ -13244,15 +13244,16 @@ blockquote {
 }
 
 .c-coins__grid-item {
+	
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	margin: auto;
 	width: 100%;
-	border: 1px solid #dab0a5;
+	/*border: 1px solid #dab0a5;
 	border-radius: 9px;
-	background-image: url("https://assets-global.website-files.com/5a7df80a1735290001389a96/5f440bde481430c023315ff1_Right-.svg");
+	background-image: url("https://assets-global.website-files.com/5a7df80a1735290001389a96/5f440bde481430c023315ff1_Right-.svg");*/
 	background-position: 91% 37%;
 	background-size: 16px;
 	background-repeat: no-repeat;
@@ -51645,7 +51646,7 @@ html.w-mod-js [data-ix=new-footer-mouseover] {
 		grid-row-end: span 1
 	}
 }
-
+  
 @font-face {
 	font-family: 'Circular';
 	src: url('https://assets.website-files.com/5a7df80a1735290001389a96/5aa0238b74816800019c6970_lineto-circular-book.woff2') format('woff2'), url('https://assets.website-files.com/5a7df80a1735290001389a96/5aa0238b74816800019c6971_lineto-circular-book.eot') format('embedded-opentype'), url('https://assets.website-files.com/5a7df80a1735290001389a96/5aa0238b6be7ec0001b2e166_lineto-circular-book.woff') format('woff');

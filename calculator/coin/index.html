@@ -45,7 +45,7 @@
 				<input class="c-footer__button w-button" type="text" id="searchInput" onkeyup="searchFunction()"
 					placeholder="Search cryptocurrencies.." title="Type in a cryptocurrency name">
 			</div>
-			<div class=" grid-13">
+			<div class="grid-13">
 
 				<div id="w-node-_30b9f0ae-dc5d-d380-2ed3-b9a87c719319-7c71930c" class="c-coins__grid-item"><a
 						href="https://www.haggled.gg/coin/buy-bitcoin"
@@ -782,64 +782,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script>
-		function searchFunction() {
-			// Declare variables
-			var input, filter, gridItems, gridItemName, gridItemTicker, i, txtValue;
-			input = document.getElementById('searchInput');
-			filter = input.value.toUpperCase();
-			gridItems = document.getElementsByClassName('c-coins__grid-item');
-
-			// Loop through all grid items
-			for (i = 0; i < gridItems.length; i++) {
-				gridItemName = gridItems[i].getElementsByClassName('c-coins__grid-item-coinname')[0];
-				gridItemTicker = gridItems[i].getElementsByClassName('c-coins__grid-item-tickername')[0];
-				name = gridItemName.textContent || gridItemName.innerText;
-				ticker = gridItemTicker.textContent || gridItemTicker.innerText;
-
-				// Combine name and ticker for search functionality
-				title = name + ' ' + ticker;
-				// Check if the text inside the cryptocurrency name or ticker container matches the search value
-				if (title.toUpperCase().indexOf(filter) > -1) {
-					gridItems[i].style.display = "";
-				} else {
-					gridItems[i].style.display = "none";
-				}
-			}
-		}
-	</script>
-
-	<script>
-		//removes arrow in search function
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get the search input element
-			var searchInput = document.getElementById("searchInput");
-
-			// Check if the search input exists
-			if (searchInput) {
-				// Change the color of the input with !important
-				searchInput.style.setProperty("background-image", "url()",
-				"important"); // Change to your desired color
-			}
-		});
-	</script>
-
-	<script>
-		//removes all href from bitcoin and similar
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get all elements with the class "c-coins__grid-item-linkblock"
-			var linkBlocks = document.querySelectorAll(".c-coins__grid-item-linkblock");
-
-			// Loop through each link block
-			linkBlocks.forEach(function (linkBlock) {
-				// Remove the href attribute
-				linkBlock.removeAttribute("href");
-			});
-		});
-	</script>
-
-
-
+	<script src="script.js"></script>
 </body>
 
 </html>
