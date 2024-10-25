@@ -17,36 +17,56 @@ function functionOnce() {
 
 function calculate() {
 
-		// Function logic
-		var inputAmount = parseFloat(document.getElementById("input").value);
-		var roundedPrice = Math.ceil(inputAmount);
-		
-		var percentage = parseFloat(document.getElementById("percentageInput").value) / 100;
-		var constFee = parseFloat(document.getElementById("constInput").value);
-		
-		var finalFee = ((percentage) * (roundedPrice + constFee)) + constFee;
-		var finalPrice = roundedPrice - finalFee;
-		var totalCrypto = finalPrice.toFixed(2);
-		
-		var finalWithFees = (roundedPrice + parseFloat(finalFee)).toFixed(2);
-		
-		// Format input amount with commas
-		var formattedInput = Number(inputAmount).toLocaleString("en-EN").split(/\s/).join(',');
-	
-		var TotalPriceString, cryptoString;
-	
-		if (inputAmount >= 100000) {
-			TotalPriceString = "YOU CRAZYYY";
-			cryptoString = "PM me on https://t.me/TGapeman for special pricing and instructions 💛";
-		} else {
-			TotalPriceString = "Exchange amount: <strong>$" + formattedInput + "</strong><br><span id='small'>The Fee: <strong>$" + finalFee.toFixed(2) + "</strong></span>";
-			cryptoString = "<strong>Receive:</strong> Amount you will receive ~ $" + totalCrypto + "<br><strong>Pay:</strong> If you want $" + formattedInput + ", then you have to send ~ $" + finalWithFees;
-		}
-	
-		// Update HTML elements
-		document.getElementById("price").innerHTML = TotalPriceString;
-		document.getElementById("crypto").innerHTML = cryptoString;
-	}
+    // Get input values
+    var desiredReceiveAmount = parseFloat(document.getElementById("input").value); // Amount the user wants to receive
+
+    var feePercentage = parseFloat(document.getElementById("percentageInput").value) / 100; // Percentage fee (e.g., 10%)
+    var minimumFee = parseFloat(document.getElementById("constInput").value); // Minimum constant fee (e.g., 15)
+
+    // Calculate the percentage-based fee
+    var percentageBasedFee = desiredReceiveAmount * feePercentage;
+
+    // Determine which fee to apply (the higher of the percentage-based fee or minimum constant fee)
+    var appliedFee;
+    var requiredSendAmount;
+
+    if (percentageBasedFee > minimumFee) {
+        // Use the percentage-based fee and calculate the total amount to send accordingly
+        appliedFee = percentageBasedFee;
+        requiredSendAmount = Math.ceil(desiredReceiveAmount / (1 - feePercentage));
+    } else {
+        // Use the minimum constant fee
+        appliedFee = minimumFee;
+        requiredSendAmount = Math.ceil(desiredReceiveAmount + appliedFee);
+    }
+
+    // Format numbers for display
+    var requiredSendAmountFormatted = requiredSendAmount.toFixed(2);
+    var formattedReceiveAmount = Number(desiredReceiveAmount).toLocaleString("en-EN").split(/\s/).join(',');
+	var simpleReceiveAmount = (desiredReceiveAmount-appliedFee)
+
+    // Prepare the output strings for display
+    var exchangeDetailsString, feeCalculationString;
+
+    if (desiredReceiveAmount >= 1000000) {
+        exchangeDetailsString = "YOU CRAZYYY";
+        feeCalculationString = "PM me on https://t.me/haggled for special pricing and instructions 💛";
+    } else {
+        // Display the exchange amount, applied fee, and required send amount
+        exchangeDetailsString = "Exchange amount: <strong>$" + formattedReceiveAmount + "</strong><br><span id='small'>The Fee: <strong>$" + appliedFee.toFixed(2) + "</strong></span>" + "<br>Receive amount: $" + simpleReceiveAmount;
+        feeCalculationString = 
+                               "<strong>Pay:</strong> To receive $" + formattedReceiveAmount + " you need to send ~ $" + requiredSendAmountFormatted;
+    }
+
+    // Update HTML elements with the calculated values
+    document.getElementById("price").innerHTML = exchangeDetailsString;
+    document.getElementById("crypto").innerHTML = feeCalculationString;
+}
+
+
+
+
+
 
 function alertFees() {
 	alert("The fees for each payment method\nCrypto = $" + CryptoConstFees + "\nNB! All prices listed includes the fees.");
