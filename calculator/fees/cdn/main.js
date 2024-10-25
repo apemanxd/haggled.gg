@@ -55,7 +55,7 @@ function calculate() {
         // Display the exchange amount, applied fee, and required send amount
         exchangeDetailsString = "Exchange amount: <strong>$" + formattedReceiveAmount + "</strong><br><span id='small'>The Fee: <strong>$" + appliedFee.toFixed(2) + "</strong></span>" + "<br>Receive amount: $" + simpleReceiveAmount;
         feeCalculationString = 
-                               "<strong>Pay:</strong> To receive $" + formattedReceiveAmount + " you need to send ~ $" + requiredSendAmountFormatted;
+                               "To receive $" + formattedReceiveAmount + " you need to send ~ $" + requiredSendAmountFormatted;
     }
 
     // Update HTML elements with the calculated values
