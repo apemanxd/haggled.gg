@@ -52,10 +52,48 @@ function calculate() {
         exchangeDetailsString = "YOU CRAZYYY";
         feeCalculationString = "PM me on https://t.me/haggled for special pricing and instructions 💛";
     } else {
+
+        /*OLD CODE:
         // Display the exchange amount, applied fee, and required send amount
         exchangeDetailsString = "Exchange amount: <strong>$" + formattedReceiveAmount + "</strong><br><span id='small'>The Fee: <strong>$" + appliedFee.toFixed(2) + "</strong></span>" + "<br>Receive amount: $" + simpleReceiveAmount;
         feeCalculationString = 
                                "To receive $" + formattedReceiveAmount + " you need to send ~ $" + requiredSendAmountFormatted;
+        */
+
+        // Display the exchange amount, applied fee, and required send amount with table formatting
+        exchangeDetailsString = `
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="text-align: left;">Exchange amount:</td>
+                    <td style="text-align: right;"><strong>$${formattedReceiveAmount}</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">The Fee:</td>
+                    <td style="text-align: right;"><strong>$${appliedFee.toFixed(2)}</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Receive amount:</td>
+                    <td style="text-align: right;"><strong>$${simpleReceiveAmount}</strong></td>
+                </tr>
+            </table>`;
+
+        // Display the amount needed to send to receive the desired amount, also in table format for alignment
+        feeCalculationString = `<hr>
+            <table style="width: 100%; margin-top: 10px; border-collapse: collapse;">
+                <tr>
+                    <td style="text-align: left;">To receive:</td>
+                    <td style="text-align: right;"><strong>$${formattedReceiveAmount}</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">You need to send:</td>
+                    <td style="text-align: right;"><strong>$${requiredSendAmountFormatted}</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">The Fee:</td>
+                    <td style="text-align: right;"><strong>$${(requiredSendAmountFormatted-formattedReceiveAmount)}</strong></td>
+                </tr>
+            </table>`;
+
     }
 
     // Update HTML elements with the calculated values
