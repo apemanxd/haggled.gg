@@ -65,15 +65,15 @@ function calculate() {
         exchangeDetailsString = `
             <table style="width: 100%; border-collapse: collapse;">
                 <tr>
-                    <td style="text-align: left;">Exchange amount:</td>
+                    <td style="text-align: left;">Send:</td>
                     <td style="text-align: right;"><strong>$ ${formattedReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">The Fee:</td>
+                    <td style="text-align: left;">Fee:</td>
                     <td style="text-align: right;"><strong>$ ${appliedFee.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">Receive amount:</td>
+                    <td style="text-align: left;">Receive:</td>
                     <td style="text-align: right;"><strong>$ ${simpleReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
             </table>`;
@@ -82,16 +82,16 @@ function calculate() {
         feeCalculationString = `
             <table style="width: 100%; margin-top: 10px; border-collapse: collapse;">
                 <tr>
-                    <td style="text-align: left;">To receive:</td>
+                    <td style="text-align: left;">Receive:</td>
                     <td style="text-align: right;"><strong>$ ${formattedReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">You need to send:</td>
-                    <td style="text-align: right;"><strong>$ ${requiredSendAmountFormatted.toFixed(2)}</strong></td>
+                    <td style="text-align: left;">Fee:</td>
+                    <td style="text-align: right;"><strong>$ ${simplefee.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">The Fee:</td>
-                    <td style="text-align: right;"><strong>$ ${simplefee.toFixed(2)}</strong></td>
+                    <td style="text-align: left;">Send:</td>
+                    <td style="text-align: right;"><strong>$ ${requiredSendAmountFormatted.toFixed(2)}</strong></td>
                 </tr>
             </table>`;
 
