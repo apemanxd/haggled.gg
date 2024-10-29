@@ -79,7 +79,7 @@ function calculate() {
             </table>`;
 
         // Display the amount needed to send to receive the desired amount, also in table format for alignment
-        feeCalculationString = `<hr>
+        feeCalculationString = `
             <table style="width: 100%; margin-top: 10px; border-collapse: collapse;">
                 <tr>
                     <td style="text-align: left;">To receive:</td>

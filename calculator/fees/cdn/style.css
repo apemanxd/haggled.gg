@@ -25,7 +25,7 @@ h3 {
 }
 
 a:hover {
-	color: #57e6e6;
+	color: #f76ae1;
 }
 
 body {
@@ -54,4 +54,69 @@ div label {
 }
 input{
 	width: 100px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+	width: 90%;
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 20px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	text-align: center;
+}
+
+.container img {
+	width: 80%;
+	max-width: 300px;
+}
+
+.container p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#price,
+#crypto {
+	margin-top: 15px;
+}
+
+footer {
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: center;
+	color: #555;
+}
+
+footer a {
+	color: #a741fc;
+	text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+	.container {
+		width: 100%;
+		margin: 0 10px;
+		padding: 15px;
+	}
+
+	.container img {
+		width: 100%;
+		max-width: 300px;
+	}
 }
