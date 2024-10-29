@@ -41,9 +41,10 @@ function calculate() {
     }
 
     // Format numbers for display
-    var requiredSendAmountFormatted = requiredSendAmount.toFixed(2);
-    var formattedReceiveAmount = Number(desiredReceiveAmount).toLocaleString("en-EN").split(/\s/).join(',');
-	var simpleReceiveAmount = (desiredReceiveAmount-appliedFee)
+    var requiredSendAmountFormatted = requiredSendAmount;
+    var formattedReceiveAmount = (desiredReceiveAmount);
+	var simpleReceiveAmount = (desiredReceiveAmount-appliedFee);
+    var simplefee = requiredSendAmountFormatted-desiredReceiveAmount;
 
     // Prepare the output strings for display
     var exchangeDetailsString, feeCalculationString;
@@ -65,15 +66,15 @@ function calculate() {
             <table style="width: 100%; border-collapse: collapse;">
                 <tr>
                     <td style="text-align: left;">Exchange amount:</td>
-                    <td style="text-align: right;"><strong>$${formattedReceiveAmount}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${formattedReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
                     <td style="text-align: left;">The Fee:</td>
-                    <td style="text-align: right;"><strong>$${appliedFee.toFixed(2)}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${appliedFee.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
                     <td style="text-align: left;">Receive amount:</td>
-                    <td style="text-align: right;"><strong>$${simpleReceiveAmount}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${simpleReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
             </table>`;
 
@@ -82,15 +83,15 @@ function calculate() {
             <table style="width: 100%; margin-top: 10px; border-collapse: collapse;">
                 <tr>
                     <td style="text-align: left;">To receive:</td>
-                    <td style="text-align: right;"><strong>$${formattedReceiveAmount}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${formattedReceiveAmount.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
                     <td style="text-align: left;">You need to send:</td>
-                    <td style="text-align: right;"><strong>$${requiredSendAmountFormatted}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${requiredSendAmountFormatted.toFixed(2)}</strong></td>
                 </tr>
                 <tr>
                     <td style="text-align: left;">The Fee:</td>
-                    <td style="text-align: right;"><strong>$${(requiredSendAmountFormatted-formattedReceiveAmount)}</strong></td>
+                    <td style="text-align: right;"><strong>$ ${simplefee.toFixed(2)}</strong></td>
                 </tr>
             </table>`;
 

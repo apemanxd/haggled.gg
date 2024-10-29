@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html class="js">
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
 	<script src="https://kit.fontawesome.com/6d9f462883.js" crossorigin="anonymous"></script>
@@ -11,16 +9,10 @@
 	<meta name="title" content="Haggled | Fees">
 	<meta property="og:title" content="Haggled | Fees">
 
-	<!-- Tittel av embed -->
 	<meta property="og:site_name" content="Sometimes we need help for what 2+2 is xD">
-
-	<!-- Midten highlight blue med link embed -->
 	<meta property="twitter:title" content="Haggled | Trusted by all">
-
-	<!-- Description bottom of embed -->
 	<meta name="description" content="Fees">
 	<meta property="og:description" content="Fees">
-
 	<meta property="og:image" content="../..//favicon.png">
 	<meta content="#F7C099" name="theme-color">
 	<link rel="icon" type="image/x-icon" href="../..//favicon.ico">
@@ -28,58 +20,130 @@
 	<meta property="og:url" content="index.html">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		/* Basic Styling */
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+			color: #333;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		/* Container Styling */
+		.container {
+			width: 90%;
+			max-width: 400px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			text-align: center;
+		}
+
+		.container img {
+			width: 80%;
+			max-width: 300px;
+		}
+
+		.container label {
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		.container input {
+			width: 100%;
+			padding: 10px;
+			margin: 5px 0 15px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+
+		.container p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		#price,
+		#crypto {
+			margin-top: 15px;
+		}
+
+		footer {
+			margin-top: 20px;
+			font-size: 14px;
+			text-align: center;
+			color: #555;
+		}
+
+		footer a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		/* Responsive Adjustments */
+		@media (max-width: 600px) {
+			.container {
+				width: 100%;
+				margin: 0 10px;
+				padding: 15px;
+			}
+
+			.container img {
+				width: 100%;
+				max-width: 300px;
+			}
+		}
+	</style>
 </head>
 
 <body>
-
-	<center>
-		<p><a href="../"><img height="" src="../../assets/others/logo2.gif" width="300"></a></p>
+	<div class="container">
+		<a href="../"><img src="../../assets/others/logo2.gif" alt="Logo"></a>
 
 		<div>
 			<label>Exchange</label>
-			<input id="input" placeholder="Enter amount" type="number" min="10" max="10000"
-				oninput="calculate()">
+			<input id="input" placeholder="Enter amount" type="number" min="10" max="10000" oninput="calculate()">
 		</div>
 		<div>
 			<label>Min Fee</label>
 			<input id="constInput" placeholder="Enter amount" type="number" min="0" value="15" onchange="calculate()">
 		</div>
-
 		<div>
 			<label>%</label>
 			<input id="percentageInput" placeholder="Enter amount" type="number" min="0" max="100" value="10" onchange="calculate()">
 		</div>
 
 		<p id="price"></p>
-		<hr class="hide">
+		<hr>
 		<p id="crypto"></p>
-		<hr class="hide">
-
-
-
-	</center>
-
+		<hr>
+	</div>
 
 	<footer>
-		<center>
-			<a href="../coin" class="nav-link"><i class="fa fa-question-circle"></i></a>
-
-			<a href="../coin" class="nav-link">
-				<span>What crypto can you send and receive?</span>
-			</a>
-			<p onclick="help()">Feel free to ask questions. Happy to help😊</p>
-			<p>Discord: <a href="#">Haggledxd</a>
-				<br>Telegram: <a href="https://t.me/Haggled/" target="_blank">t.me/Haggled</a>
-				<br>OGUser: <a href="https://oguser.com/Haggled" target="_blank">/Haggled</a>
-				<br>Kingz: <a href="https://Kingz.net/Haggled" target="_blank">/Haggled</a>
-			</p>
-		</center>
+		<p>
+			<a href="../coin" class="nav-link"><i class="fa fa-question-circle"></i> What crypto can you send and receive?</a>
+		</p>
+		<p>Feel free to ask questions. Happy to help😊</p>
+		<p>
+			Discord: <a href="#">Haggledxd</a><br>
+			Telegram: <a href="https://t.me/Haggled/" target="_blank">t.me/Haggled</a><br>
+			OGUser: <a href="https://oguser.com/Haggled" target="_blank">/Haggled</a><br>
+			Kingz: <a href="https://Kingz.net/Haggled" target="_blank">/Haggled</a>
+		</p>
 	</footer>
 
 	<script src="cdn/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
 </body>
 
 </html>
