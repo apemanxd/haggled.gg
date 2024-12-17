@@ -1,6 +1,6 @@
 
 
-var constFee= 10;
+var constFee= 20;
 var percentage=10/100;
 
 
@@ -39,7 +39,7 @@ function calculate(input) {
 	if (input >= 100000) {
 		var TotalPriceString = "YOU CRAZYYY";
 		var cryptoString = "I do not do deals over 100k";
-		var paypalString = "Please contact me directly on Telegram or discord for further inquiries";
+		var paypalString = "Please contact me directly on Telegram for further inquiries";
 		
 	}
 
@@ -47,7 +47,7 @@ function calculate(input) {
 	else {
 		var TotalPriceString = "Exchange amount: " + "<strong>$" + FinalLetter + "</strong>" + "<br><span id='small'>The Fee: <strong> $" + finalFee + "</strong></span>";
 		var cryptoString = "<strong>Crypto ⇄ Crypto:</strong> You will receive ~ $" + TotalCrypto;
-		var paypalString = "<strong>CRYPTO → PAYPAL/E-TRANSFER/WISE:</strong> You will receive ~ $" + TotalCrypto;
+		var paypalString = "<strong>CRYPTO → PAYPAL/E-TRANSFER/UKBT/VIPPS:</strong> You will receive ~ $" + TotalCrypto;
 	
 	}
 
